@@ -21,6 +21,7 @@ public class Lion {
         }
     }
 
+
     public int getKittens() {
         return feline.getKittens();
     }

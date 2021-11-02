@@ -23,7 +23,6 @@ public class LionWithMockStubTest {
         int lionKittensCount = lion.getKittens();
         assertEquals(expectedLionKittensCount, lionKittensCount);
         Mockito.verify(feline).getKittens();
-        System.out.println("котят всего :" + feline.getKittens());
     }
 
     @Test
@@ -32,7 +31,6 @@ public class LionWithMockStubTest {
         boolean actualLionMan = lion.doesHaveMane();
         boolean expectedLionMan = true;
         assertEquals(expectedLionMan, actualLionMan);
-        System.out.println(lion.doesHaveMane());
     }
 
 
@@ -44,7 +42,6 @@ public class LionWithMockStubTest {
         List<String> checkedFoodLion = lion.getFood();
         Mockito.verify(feline).getFood("Хищник");
         assertEquals(expectedFoodLion,checkedFoodLion);
-        System.out.println(checkedFoodLion);
 
 
 

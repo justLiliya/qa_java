@@ -40,7 +40,6 @@ public class FelineTest {
         Feline feline = new Feline();
         String actualFelineFamily = feline.getFamily();
         assertEquals("Кошачьи", actualFelineFamily);
-        System.out.println(feline.getFamily());
     }
 
     @Test
